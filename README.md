@@ -38,3 +38,4 @@ O projeto consiste em um arquivo HTML que define a estrutura e a estilização d
 - Botão de envio (<button type="submit">Login</button>).
 - Um link para a página de cadastro (<a href="index.php?action=register">Cadastrar-se</a>).
 
+ 
