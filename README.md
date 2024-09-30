@@ -62,27 +62,68 @@ O projeto consiste em um arquivo HTML que define a estrutura e a estilização d
 
 ## Estrutura do HTML 
 
-- <!DOCTYPE html>: Define o documento como HTML5.
+- Define o documento como HTML5:
+```
 
-- <html lang="pt-br">: Define o idioma da página como português (Brasil).
+<!DOCTYPE html>
 
-- <head>: Contém as meta tags (como charset e viewport) e o título da página.
+```
 
-- <body>: Contém o conteúdo visível da página.
+- Define o idioma da página como português (Brasil):
+```
+
+<html lang="pt-br">: 
+
+```
+
+- Contém as meta tags (como charset e viewport) e o título da página:
+
+```
+
+<head>: 
+
+```
+
+- Contém o conteúdo visível da página:
+```
+
+<body>:
+
+```
 - Uma div centralizada contendo:
-- Um título <h2> com o texto "Cadastro de Usuário".
-- Um formulário <form> que contém campos para nome, e-mail, senha e perfil do usuário, além de um botão de envio.
-- Um link <a> para voltar à página de login (a ser implementado).
+- Um título **h2** com o texto "Cadastro de Usuário".
+- Um formulário **form** que contém campos para nome, e-mail, senha e perfil do usuário, além de um botão de envio.
+- Um link **a** para voltar à página de login (a ser implementado).
 
 ## Campos de Formulário
 
-- Nome: <input type="text" name="nome" id="nome" required>
+- Nome:
+```
 
-- E-mail: <input type="email" name="email" id="email" required>
+ <input type="text" name="nome" id="nome" required>
 
-- Senha: <input type="password" name="senha" id="senha" required>
+ ```
 
-- Perfil: <select name="perfil" id="perfil"> com opções "Admin", "Gestor" e "Colaborador".
+- E-mail:
+```
+
+ <input type="email" name="email" id="email" required>
+
+
+```
+- Senha: 
+```
+
+<input type="password" name="senha" id="senha" required>
+
+```
+
+- Perfil: 
+```
+
+<select name="perfil" id="perfil"> com opções "Admin", "Gestor" e "Colaborador".
+
+```
 
 ## Requisitos de validação 
 
