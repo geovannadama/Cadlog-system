@@ -40,7 +40,7 @@ O projeto consiste em um arquivo HTML que define a estrutura e a estilização d
 
  ## Página de registro 
 
- ![img](imagens/tela registro.png)
+ ![tela de registro](imagens/registro.png)
 
  Este projeto é uma simples página web de cadastro de usuário. A interface permite ao usuário inserir seus dados (nome, e-mail, senha) e escolher um perfil (Admin, Gestor ou Colaborador). 
 
