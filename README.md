@@ -2,7 +2,7 @@
 
 ## Página de Login
 
-[tela de login](imagens/login.png)
+![tela de login](imagens/login.png)
 
 Este projeto contém uma página de login simples, estilizada com CSS para ter um visual formal e profissional. A página foi projetada para ser fácil de usar e totalmente responsiva, com um formulário de login centralizado e um link de cadastro destacado.
 
