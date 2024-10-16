@@ -26,5 +26,11 @@ class User
         $stmt->execute($data);
 
     }
+    //Função para buscar todos os dados de todos os usuários do banco de dados 
+    public static function all(){
+        $conn = Database::getConnection();
+        $stmt = $conn->query('SELECT * FROM usuarios');
+        return $stmt-> fetchALL(PDO::FETCH_ASSOC);
+    }
 } 
 ?>
