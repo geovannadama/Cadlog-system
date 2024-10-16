@@ -26,8 +26,9 @@ class AuthController
         }
        }else{
         // Se a requisição for POST (por exemplo, GET), correga a página de registro
-        include 'views/register.php';
+        include 'views/login.php';
      }
+    }
      public function logout(){
         session_start();
         session_destroy();
@@ -35,6 +36,4 @@ class AuthController
        
      }
     }
-}
 ?>
- 

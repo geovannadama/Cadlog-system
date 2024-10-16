@@ -19,7 +19,7 @@ class UserController{
             header('Location: index.php');
         }else{
             // Se a requisição não for POST(por exemplo, GET), carrega a página de registro  
-            include 'views/register.php'
+            include 'views/register.php';
         }
     }
 }
