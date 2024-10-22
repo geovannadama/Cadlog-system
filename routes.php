@@ -25,6 +25,10 @@ switch($action){
         break;
     case 'logout':
         $authController->logout();
+        break;
+        case 'list':
+            $userController->list();
+            break;
     default:
         $authController->login();
         break;
