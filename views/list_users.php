@@ -61,4 +61,4 @@ if (isset($_SESSION['perfil'])):
 <?php else: ?>
     <!-- Se $_SESSION['perfil'] não estiver definido, exibe uma mensagem -->
     <p>Erro: Você não tem permissão para visualizar esta página.</p>
-<?php endif; ?>
+<?php endif; ?> 
