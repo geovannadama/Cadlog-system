@@ -135,6 +135,8 @@ O projeto consiste em um arquivo HTML que define a estrutura e a estilização d
 
 Esta página consiste em uma aplicação web de listagem de usuários com controle de acesso baseado em perfis de usuário. A interface apresenta uma tabela com dados de usuários, onde as ações disponíveis (editar e excluir) variam conforme o perfil do usuário logado.
 
+ ![lista de usuários](imagens/listadeusuarios.png)
+
 ### Funcionalidades Principais 
 
 - Listagem de Usuários: Exibe uma tabela com os usuários, contendo colunas para ID, Nome, Email, Perfil e Ações.
