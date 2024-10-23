@@ -131,6 +131,48 @@ O projeto consiste em um arquivo HTML que define a estrutura e a estilização d
 
 - O campo de e-mail faz validação automática para garantir que um formato válido seja inserido (e.g., exemplo@dominio.com).
 
+## Lista de Usuários
+
+Esta página consiste em uma aplicação web de listagem de usuários com controle de acesso baseado em perfis de usuário. A interface apresenta uma tabela com dados de usuários, onde as ações disponíveis (editar e excluir) variam conforme o perfil do usuário logado.
+
+### Funcionalidades Principais 
+
+- Listagem de Usuários: Exibe uma tabela com os usuários, contendo colunas para ID, Nome, Email, Perfil e Ações.
+
+- Controle de Acesso: Usuários podem ter diferentes perfis, como admin ou gestor, e as permissões variam de acordo com o perfil:
+- Admin: Pode visualizar, editar e excluir usuários.
+- Gestor: Pode visualizar e editar usuários, mas não excluir.
+- Outros: Podem visualizar a lista de usuários, mas não realizar nenhuma ação (editar ou excluir).
+- Interface Responsiva: Layout ajustável para dispositivos móveis.
+- Feedback Visual: Quando o cursor passa sobre as linhas da tabela, a linha muda de cor. Botões possuem efeito hover para aprimorar a experiência do usuário.
+
+### Estrutura do Projeto 
+
+#### PHP: Gerenciamento de Sessões e Controle de acesso
+
+O código PHP gerencia o controle de acesso dos usuários. As permissões são baseadas na variável de sessão $_SESSION['perfil'], que determina as ações disponíveis para cada usuário:
+
+- Se a sessão não estiver iniciada ou o perfil não for definido, o sistema bloqueia o acesso e exibe uma mensagem de erro.
+- Para admin e gestor, o sistema permite editar informações de usuários, enquanto somente o admin pode excluir.
+
+### HTML: Estrutura da Página
+
+A página é composta por uma tabela (<table>) onde os dados dos usuários são listados, juntamente com botões de ação (editar e excluir). A estrutura principal contém:
+
+- Um cabeçalho (<h2>) com o título da página.
+- Uma tabela onde cada linha representa um usuário.
+- Links de ação (Editar e Excluir), que aparecem ou não dependendo do perfil do usuário logado.
+
+### CSS: Estilização e Responsividade
+
+O estilo foi desenvolvido para criar uma interface limpa e moderna, utilizando tons de azul e cinza. O layout é responsivo, adaptando-se bem a diferentes tamanhos de tela, especialmente dispositivos móveis.
+
+- Tabela Estilizada: Linhas alternam cores em tons de cinza, e a cor muda para azul claro ao passar o mouse sobre uma linha.
+- Botões: Estilizados em azul escuro com texto branco. O botão de exclusão é vermelho para indicar a gravidade da ação. Todos os botões possuem efeitos de transição para suavizar as interações do usuário.
+- Responsividade: O layout foi projetado para se adaptar a diferentes resoluções de tela. Em dispositivos menores, os espaçamentos e tamanhos de fonte são ajustados para manter a legibilidade.
+
+
+
 ## Tecnologias utilizadas 
 
 - Vs Code 
