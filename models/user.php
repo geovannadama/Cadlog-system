@@ -91,6 +91,16 @@ class User
         // Executa a consulta com o ID do usuário a ser excluído
         $stmt->execute(['id' => $id]);
     }
+    public static function update($id, $data){
+        $conn = Database::getConnection();
+
+        //Prepara a consulta SQL para atualizar os dados do usuário
+        $stmt=$conn->prepare('UPDATE usuarios SET nome = :nome, email = :email, perfil = :perfil WHERE id = :id');
+
+        $data['id'] = $id;
+
+        $stmt->execute($data);
+    }
 
 }
 ?>
