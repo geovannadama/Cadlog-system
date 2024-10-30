@@ -99,7 +99,7 @@ class User
 
         $data['id'] = $id;
 
-        $stmt->execute($data);
+        $stmt->execute($data); 
     }
 
 }
