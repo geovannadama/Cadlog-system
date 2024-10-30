@@ -174,6 +174,29 @@ O estilo foi desenvolvido para criar uma interface limpa e moderna, utilizando t
 - Responsividade: O layout foi projetado para se adaptar a diferentes resoluções de tela. Em dispositivos menores, os espaçamentos e tamanhos de fonte são ajustados para manter a legibilidade.
 
 
+## Dashboard 
+
+Este projeto é uma interface de dashboard simples com PHP e HTML para exibir diferentes áreas de acesso com base no perfil do usuário. O dashboard diferencia permissões de acesso entre Admin, Gestor e Colaborador, e possui estilos básicos utilizando CSS com cores azul e cinza.
+
+### Funcionalidades 
+
+- Exibe uma mensagem de boas-vindas personalizada com base no perfil do usuário.
+- Diferencia permissões:
+- Admin: Pode gerenciar usuários com as permissões de edição e exclusão.
+- Gestor: Pode gerenciar usuários apenas com a permissão de edição.
+- Colaborador: Apenas área de visualização.
+- Link para logout.
+
+### Estrutura do código
+
+O projeto possui um código HTML e PHP, além de uma seção de estilo em CSS no próprio arquivo HTML para estilização básica.
+
+#### Código PHP e HTML
+
+- O código HTML exibe mensagens e botões de gerenciamento, variando o conteúdo conforme o perfil do usuário.
+
+- O perfil do usuário é identificado pela variável $_SESSION['perfil'], que deve estar definida previamente no sistema de login para diferenciar cada tipo de usuário.
+
 
 ## Tecnologias utilizadas 
 
@@ -183,5 +206,3 @@ O estilo foi desenvolvido para criar uma interface limpa e moderna, utilizando t
 - PHP
 - SQL
 - CSS
-
-
