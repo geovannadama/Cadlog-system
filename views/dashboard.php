@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" type='text/css' media='screen' href="">
     <style>
         /* Estilos gerais */
         body {
@@ -67,6 +68,16 @@
         <?php if($_SESSION['perfil'] == 'admin'):?>
             <!-- Admin pode gerenciar usuários (editar e excluir) -->
             <a href="index.php?action=list" class="btn">Gerenciar Usuários (Admin)</a>
-        <?
+ <?php elseif($_SESSION['perfil'] == 'gestor'): ?>
+            <!-- Gestor pode gerenciar usuários (apenas editar) -->
+            <a href="index.php?action=list" class="btn">Gerenciar Usuários (Gestor)</a>
+            <p>Área exclusiva do Gestor.</p>
+ <?php else: ?>
+            <p>Área exclusiva do Colaborador.</p>
+ <?php endif; ?>
 
- 
+        <br><br><br><br>
+        <!-- Link para logout -->
+        <a href="index.php?action=logout" class="btn">Logout</a>
+    </div>
+</body>
