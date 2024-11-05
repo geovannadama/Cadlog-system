@@ -39,8 +39,12 @@ class UserController
 
                 User::update($id, $data);
                 header('location: index.php?action=list');
+            } else{
+                include 'views/edit_user.php';
             }
  
+        }else{
+            echo 'Você não tem permição para editar usuários';
         }
     }
 }
