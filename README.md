@@ -204,7 +204,15 @@ Este documento descreve a implementação e estilização das funcionalidades de
 
 ### Classes utilizadas 
 
+- user-actions: Contêiner que agrupa os botões de edição e exclusão. Esse contêiner ajuda a alinhar os botões e a manter o layout consistente.
+- edit-button: Classe aplicada ao botão de edição de usuário.
+- delete-button: Classe aplicada ao botão de exclusão de usuário.
 
+### Funcionalidades
+
+- Botão de Edição: Ao clicar, o botão de edição deve redirecionar para uma página onde o usuário pode editar informações. 
+
+- Botão de Exclusão: Ao clicar, o botão de exclusão deve exibir uma confirmação (para evitar exclusões acidentais). 
 
 ## Tecnologias utilizadas 
 
