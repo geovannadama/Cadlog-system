@@ -198,6 +198,14 @@ O projeto possui um código HTML e PHP, além de uma seção de estilo em CSS no
 - O perfil do usuário é identificado pela variável $_SESSION['perfil'], que deve estar definida previamente no sistema de login para diferenciar cada tipo de usuário.
 
 
+## Edição e exclusão de usuários 
+
+Este documento descreve a implementação e estilização das funcionalidades de edição e exclusão de usuários na aplicação. Esses recursos são essenciais para permitir que administradores ou usuários com permissões adequadas gerenciem contas.
+
+### Classes utilizadas 
+
+
+
 ## Tecnologias utilizadas 
 
 - Vs Code 
